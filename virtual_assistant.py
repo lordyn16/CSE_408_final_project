@@ -60,6 +60,12 @@ def main():
         response = wikipedia.summary(command, 5)
         print(response)
         speak(response)
+        
+    #plays notes that users asks ex "piano c2 a2"
+    elif 'piano' in command:
+        command = command.replace('piano', '')
+        notes = command.split(" ", 1000)
+        piano.play_song(notes)
 
     
 
