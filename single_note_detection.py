@@ -79,7 +79,7 @@ def detect_sound_note(sound_file):
 if __name__ == "__main__":
 
 	path = os.getcwd()
-	file_name = path +"/sound files"+ "/d2.wav" # replace the sound file (d2.wav) with a different one to check
+	file_name = path + "/d2.wav" # replace the sound file (d2.wav) with a different one to check
 	audio_file = wave.open(file_name)
 	detected_sound_note = detect_sound_note(audio_file)
 	print("\n\tThe detected sound note is = " + str(detected_sound_note))
